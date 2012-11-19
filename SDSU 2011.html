@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta name="description" content="Hailstorm A &quot;Make 15&quot; Game South Dakota State University Programming Design Competition Matt Cotter Steve Jungst Kevin Viratyosin  Hi! We are high school students from Morris, MN. Any questions? Okay! Let's go! How We Did It Java Eclipse IDE Java Swing Jigloo SourceForge Technical Features Graphic User Interface (GUI) Computer AIs (including an AlphaBeta pruning algorithm) Threading Localization Computer AIs and Algorithms Threading Localization Let's Play!"/>
+    <title></title>
+    <script type="text/javascript" language="javascript">
+//      <![CDATA[
+            var images = new Array (9);
+            images[0] = "SDSU%202011.html_files/SDSU%202011.001.png";
+            images[1] = "SDSU%202011.html_files/SDSU%202011.002.png";
+            images[2] = "SDSU%202011.html_files/SDSU%202011.003.png";
+            images[3] = "SDSU%202011.html_files/SDSU%202011.004.png";
+            images[4] = "SDSU%202011.html_files/SDSU%202011.005.png";
+            images[5] = "SDSU%202011.html_files/SDSU%202011.006.png";
+            images[6] = "SDSU%202011.html_files/SDSU%202011.007.png";
+            images[7] = "SDSU%202011.html_files/SDSU%202011.008.png";
+            images[8] = "SDSU%202011.html_files/SDSU%202011.009.png";
+            var index = 0;
+            function WindowLoaded(evt)
+            {
+                document.body.onselectstart = function () { return false; };
+            }
+            function Step(i)
+            {
+                GoTo(index + i)
+            }
+            function GoTo(newIndex)
+            {
+                if(newIndex >= 0 && newIndex < images.length)
+                {
+                    index = newIndex;
+                    document.Slideshow.src = images[index];
+                }
+            }
+//      ]]>
+    </script>
+</head>
+<body bgcolor="black" onload='WindowLoaded(event);'>
+    <p align="center">
+        <br/>
+        <br/>
+        <img name="Slideshow" alt="" src="SDSU%202011.html_files/SDSU%202011.001.png" onclick="Step(1)"/>
+        <br/>
+        <br/>
+        <input type="image" src="SDSU 2011.html_files/home.png" onclick="GoTo(0)"/>
+        &nbsp;&nbsp;&nbsp;
+        <input type="image" src="SDSU 2011.html_files/prev.png" onclick="Step(-1)"/>
+        <input type="image" src="SDSU 2011.html_files/next.png" onclick="Step(1)"/>
+    </p>
+</body>
+</html>
